@@ -57,33 +57,39 @@ nav a:hover {
 
 /* HERO - lighter blue + professional city lighting */
 .hero {
-  background: 
-    linear-gradient(rgba(30, 80, 130, 0.75), rgba(30, 80, 130, 0.75)),
-    url('https://unsplash.com/photos/a-road-with-lights-on-it-afcKMcl_R5c') center/cover no-repeat;
-  
-  height: 80vh;
+ 
+ background:
+    linear-gradient(rgba(30, 80, 130, 0.65), rgba(30, 80, 130, 0.65)),
+    url('https://images.unsplash.com/photo-1671221394247-db3f3ee3e2b1?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+
+
   display: flex;
   align-items: center;
-  color: #fff;
+  justify-content: center;   /* ✅ center horizontally */
+  text-align: center;        /* ✅ center text */
+
 }
 
 
 
 .hero-content {
-  margin-left: 10%;
-  max-width: 600px;
+  margin: auto;
+  max-width: 700px;
+
 }
 
 .hero h2 {
-  font-size: 48px;
+ 
+  font-size: 42px;
+  margin-bottom: 15px;
   font-weight: 600;
   line-height: 1.2;
-  margin-bottom: 20px;
+    color: #ffffff;
 }
 
 .hero p {
-  font-size: 18px;
-  color: #e3ecf5;
+    font-size: 18px;
+  color:#e6eef7;
 }
 
 
