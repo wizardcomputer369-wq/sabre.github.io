@@ -189,14 +189,6 @@ footer {
   z-index: 999;
 }
 
-#cookie-banner button {
-  background: #ffcc00;
-  border: none;
-  padding: 8px 14px;
-  margin-left: 10px;
-  cursor: pointer;
-  font-size: 14px;
-}
 
 
 /* MOBILE RESPONSIVE */
