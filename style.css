@@ -55,9 +55,10 @@ nav a:hover {
 }
 
 /* Hero */
+
 .hero {
   background: linear-gradient(rgba(10,37,64,0.7), rgba(10,37,64,0.7)),
-              url('https://images.unsplash.com/photo-1509395176047-4a66953fd231') center/cover;
+              url('https://images.unsplash.com/photo-1477959858617-67f85cf4f1df') center/cover;
   height: 90vh;
   display: flex;
   align-items: center;
