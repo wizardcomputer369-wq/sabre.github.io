@@ -12,7 +12,7 @@ html {
 /* ================= BASE ================= */
 body {
   font-family: 'Poppins', sans-serif;
-  color: #1a1a1a;
+  color: #2a2a2a;
   background: #eef3f9;
   line-height: 1.6;
 }
@@ -117,23 +117,52 @@ nav a:hover {
   color: white;
 }
 
+
 .hero-content h2 {
-  font-size: 48px;
-  margin-bottom: 20px;
-  text-shadow: 0 5px 20px rgba(0,0,0,0.6);
+  font-size: 50px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
 
 .hero-content p {
   font-size: 20px;
-  color: #e6eef7;
-  text-shadow: 0 3px 12px rgba(0,0,0,0.5);
+  opacity: 0.95;
 }
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
 
 /* ================= SECTIONS ================= */
 section {
-  padding: 100px 0;
+  padding: 90px 0;
   position: relative;
   z-index: 2;
+}
+
+.about-left img {
+  border-radius: 8px;
+}
+
+.hero-btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 28px;
+
+  background: #00a2ff;
+  color: white;
+  text-decoration: none;
+
+  border-radius: 6px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.hero-btn:hover {
+  background: #007acc;
+  transform: translateY(-2px);
 }
 
 /* Titles */
@@ -283,4 +312,20 @@ footer {
   .cards {
     grid-template-columns: 1fr;
   }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 38px;
+}
+
+.logo span {
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
 }
