@@ -29,11 +29,9 @@ header {
   background: #1e4f82;
   color: #fff;
   padding: 18px 0;
-
   position: sticky;
   top: 0;
   z-index: 9999;
-
   box-shadow: 0 4px 20px rgba(0,0,0,0.2);
 }
 
@@ -57,7 +55,6 @@ nav a {
   color: #d6e4f5;
   text-decoration: none;
   font-size: 14px;
-  transition: 0.2s;
 }
 
 nav a:hover {
@@ -65,11 +62,11 @@ nav a:hover {
 }
 
 /* ================= HERO ================= */
-
 .hero {
   min-height: 60vh;
   display: flex;
   align-items: center;
+  justify-content: center;
 
   background: 
     linear-gradient(rgba(10, 26, 47, 0.85), rgba(10, 26, 47, 0.85)),
@@ -79,53 +76,29 @@ nav a:hover {
   background-position: center;
 }
 
-
-
-.hero-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 40px;
+.hero-content {
+  text-align: center;
+  margin: auto;
+  max-width: 700px;
+  color: white;
 }
 
-/* logo */
-.hero-left img {
-  width: 280px;
-  max-width: 100%;
-}
-
-/* text */
-.hero-right {
-  color: #fff;
-  max-width: 500px;
-}
-
-.hero-right h2 {
-  font-size: 36px;
+.hero-content h2 {
+  font-size: 42px;
   margin-bottom: 15px;
 }
 
-@media (max-width: 768px) {
-  .hero-inner {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .hero-left img {
-    width: 180px;
-  }
+.hero-content p {
+  font-size: 18px;
+  opacity: 0.9;
 }
-
-.hero-right p {
-  font-size: 16px;
-}
-
 
 /* ================= SECTIONS ================= */
 section {
   padding: 100px 0;
 }
 
+/* Titles */
 h2 {
   text-align: center;
   margin-bottom: 50px;
@@ -134,7 +107,6 @@ h2 {
   position: relative;
 }
 
-/* nice underline */
 h2::after {
   content: "";
   width: 60px;
@@ -167,22 +139,21 @@ h2::after {
 }
 
 .card h3 {
-  margin-bottom: 10px; /* ✅ FIXED */
+  margin-bottom: 10px;
 }
-
 
 /* ================= GALLERY ================= */
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 12px;
-  max-width: 800px;   /* ✅ stops it stretching */
+  max-width: 800px;
   margin: 20px auto;
 }
 
 .gallery img {
   width: 100%;
-  height: 140px;      /* ✅ small thumbnails */
+  height: 140px;
   object-fit: cover;
   border-radius: 8px;
   cursor: pointer;
@@ -193,26 +164,39 @@ h2::after {
   transform: scale(1.05);
 }
 
+/* ================= ABOUT ================= */
+.dark {
+  background: #1e4f82;
+  color: #fff;
+  text-align: center;
+}
+
+.dark h2 {
+  color: #fff;
+}
+
+.dark p {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  color: #cfd8e3;
+}
+
 /* ================= CONTACT ================= */
 .contact-box {
   max-width: 700px;
   margin: auto;
-
-  text-align: center;   /* ✅ centres text */
-  
+  text-align: center;
   background: #fff;
   padding: 35px;
   border: 1px solid #e5eaf0;
   border-radius: 8px;
 }
 
-/* spacing between lines */
 .contact-box p {
   margin-bottom: 12px;
 }
 
-/* make labels bold and clean */
 .contact-box strong {
   color: #1e4f82;
 }
-
