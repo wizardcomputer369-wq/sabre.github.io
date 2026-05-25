@@ -127,10 +127,8 @@ h2::after {
   padding: 30px;
   border-radius: 10px;
   border: 1px solid #e5eaf0;
-
   text-decoration: none;
   color: inherit;
-
   transition: all 0.3s ease;
 }
 
@@ -140,21 +138,28 @@ h2::after {
 }
 
 .card h3 {
-  margin-bottom: 
-
-gallery img {
-  width: 100%;
-  height: 160px;   /* ✅ smaller thumbnails */
-  object-fit: cover;
-
-  border-radius: 8px;
-  cursor: pointer;
-
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 10px; /* ✅ FIXED */
 }
 
+
+/* ================= GALLERY ================= */
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* ✅ smaller columns */
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 12px;
+  max-width: 800px;   /* ✅ stops it stretching */
+  margin: 20px auto;
+}
+
+.gallery img {
+  width: 100%;
+  height: 140px;      /* ✅ small thumbnails */
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
 }
