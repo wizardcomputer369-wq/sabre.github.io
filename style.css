@@ -63,18 +63,23 @@ nav a:hover {
 
 /* ================= HERO ================= */
 .hero {
+
   min-height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
 
+
+
   background:
-    linear-gradient(rgba(10, 26, 47, 0.5), rgba(10, 26, 47, 0.5)),
+    linear-gradient(rgba(10, 26, 47, 0.6), rgba(10, 26, 47, 0.6)),
+
     url("sport1.jpeg"); /* your image */
 
   background-size: cover;
   background-position: center;
 }
+
 
 .hero-content {
   text-align: center;
@@ -85,11 +90,22 @@ nav a:hover {
 
 .hero-content h2 {
   font-size: 42px;
+    color: #ffffff; /* ✅ make it white *
   margin-bottom: 15px;
+}
+  
+.hero-content h2 {
+  text-shadow: 0 3px 12px rgba(0,0,0,0.6);
 }
 
 .hero-content p {
+  text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+
+
+.hero-content p {
   font-size: 18px;
+    color: #e6eef7;
 }
 
 /* ================= SECTIONS ================= */
