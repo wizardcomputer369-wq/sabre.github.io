@@ -61,6 +61,48 @@ nav a:hover {
   color: #ffffff;
 }
 
+ ================= ABOUT LAYOUT ================= */
+.about-inner {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.about-left img {
+  width: 260px;
+  max-width: 100%;
+}
+
+/* right text */
+.about-right {
+  color: #fff;
+  max-width: 600px;
+}
+
+.about-right h2 {
+  text-align: left;
+}
+
+.about-right p {
+  text-align: left;
+  color: #cfd8e3;
+}
+
+@media (max-width: 768px) {
+  .about-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-right h2,
+  .about-right p {
+    text-align: center;
+  }
+
+  .about-left img {
+    width: 180px;
+  }
+
 /* ================= HERO ================= */
 .hero {
   min-height: 60vh;
@@ -69,7 +111,7 @@ nav a:hover {
   justify-content: center;
 
   background: 
-    linear-gradient(rgba(10, 26, 47, 0.85), rgba(10, 26, 47, 0.85)),
+   linear-gradient(rgba(10, 26, 47, 0.5), rgba(10, 26, 47, 0.5)),
     url("sport1.jpeg");
 
   background-size: cover;
