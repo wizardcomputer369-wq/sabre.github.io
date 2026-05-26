@@ -318,7 +318,6 @@ footer {
   display: flex;
   align-items: center;
   gap: 10px;
-  mix-blend-mode: multiply;
 }
 
 .logo img {
