@@ -318,6 +318,7 @@ footer {
   display: flex;
   align-items: center;
   gap: 10px;
+  mix-blend-mode: multiply;
 }
 
 .logo img {
@@ -329,3 +330,6 @@ footer {
   font-weight: 600;
   font-size: 16px;
 }
+
+
+
