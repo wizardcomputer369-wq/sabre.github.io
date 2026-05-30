@@ -205,58 +205,22 @@ h2 {
 
 /* ================= GALLERY ================= */
 
-* ================= GALLERY SLIDER ================= */
+
+/* ================= GALLERY ================= */
 
 .gallery {
-  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
   max-width: 900px;
   margin: 40px auto;
-  overflow: hidden;
 }
-
-.track {
-  display: flex;
-  gap: 15px;
-  transition: transform 0.4s ease;
-}
-
-.track img {
-  width: 220px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 10px;
-  flex-shrink: 0;
-  transition: 0.3s;
-}
-
-.track img:hover {
-  transform: scale(1.05);
-}
-
-/* Arrows */
-.prev, .next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: #1f4e79;
-  color: white;
-  border: none;
-  padding: 10px 14px;
-  cursor: pointer;
-  border-radius: 50%;
-  z-index: 10;
-}
-
-.prev { left: 10px; }
-.next { right: 10px; }
-
-
 
 .gallery img {
   width: 100%;
-  height: 140px;
-  object-fit: cover;
-  border-radius: 8px;
+  height: 180px;        /* controls size of small images */
+  object-fit: cover;    /* keeps images nicely cropped */
+  border-radius: 10px;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -264,6 +228,7 @@ h2 {
 .gallery img:hover {
   transform: scale(1.05);
 }
+
 
 /* ================= ABOUT ================= */
 .about {
