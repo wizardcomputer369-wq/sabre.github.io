@@ -46,28 +46,17 @@ window.onload = function () {
     bigImg.style.borderRadius = "10px";
     bigImg.style.boxShadow = "0 0 30px rgba(0,0,0,0.6)";
 
-    // ✅ NEXT button
-    const next = document.createElement("button");
-    next.innerHTML = "&#10095;";
-    styleButton(next, "right");
 
-    next.onclick = (e) => {
-      e.stopPropagation();
-      currentIndex = (currentIndex + 1) % galleryImages.length;
-      bigImg.src = galleryImages[currentIndex].src;
-    };
+// ✅ NEXT button
+const next = document.createElement("button");
+next.innerHTML = "&#10095;";
+styleButton(next, "right");
 
-    // ✅ PREV button
-    const prev = document.createElement("button");
-    prev.innerHTML = "&#10094;";
-    styleButton(prev, "left");
+// ✅ PREV button
+const prev = document.createElement("button");
+prev.innerHTML = "&#10094;";
+styleButton(prev, "left");
 
-    prev.onclick = (e) => {
-      e.stopPropagation();
-      currentIndex =
-        (currentIndex - 1 + galleryImages.length) % galleryImages.length;
-      bigImg.src = galleryImages[currentIndex].src;
-    };
 
     overlay.appendChild(bigImg);
     overlay.appendChild(next);
