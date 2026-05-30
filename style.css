@@ -204,13 +204,35 @@ h2 {
 }
 
 /* ================= GALLERY ================= */
+
+* ================= GALLERY SLIDER ================= */
 .gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 12px;
+  position: relative;
+  overflow: hidden;
   max-width: 800px;
   margin: 20px auto;
 }
+
+.track {
+  display: flex;
+  gap: 12px;
+  transition: transform 0.4s ease;
+}
+
+.track img {
+  width: 180px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  flex-shrink: 0;
+}
+
+.track img:hover {
+  transform: scale(1.05);
+}
+
 
 .gallery img {
   width: 100%;
