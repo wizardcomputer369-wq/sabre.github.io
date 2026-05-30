@@ -51,11 +51,25 @@ window.onload = function () {
 const next = document.createElement("button");
 next.innerHTML = "&#10095;";
 styleButton(next, "right");
+    
+next.onclick = (e) => {
+  e.stopPropagation(); // ✅ important
+  currentIndex = (currentIndex + 1) % galleryImages.length;
+  bigImg.src = galleryImages[currentIndex].src;
+};
+
 
 // ✅ PREV button
 const prev = document.createElement("button");
 prev.innerHTML = "&#10094;";
 styleButton(prev, "left");
+
+prev.onclick = (e) => {
+  e.stopPropagation(); // ✅ important
+  currentIndex =
+    (currentIndex - 1 + galleryImages.length) % galleryImages.length;
+  bigImg.src = galleryImages[currentIndex].src;
+};
 
 
     overlay.appendChild(bigImg);
