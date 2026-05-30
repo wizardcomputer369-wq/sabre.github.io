@@ -177,9 +177,11 @@ h2 {
 
 /* ================= SERVICES ================= */
 
+
 #services {
-  background: linear-gradient(to bottom, #eef3f9, #f8fbff);
+  background: transparent;
 }
+
 
 .cards {
   display: grid;
