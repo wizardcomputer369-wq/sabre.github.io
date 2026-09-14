@@ -15,7 +15,7 @@ body {
   color: #2a2a2a;
   background: #eef3f9;
   line-height: 1.6;
-  }
+}
 
 /* ================= CONTAINER ================= */
 .container {
@@ -32,33 +32,44 @@ header {
   top: 0;
   z-index: 9999;
   box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-  }
-  .header-content {
-  }
-  header h1 {
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
   font-size: 18px;
   font-weight: 600;
   color: #fff;
-  }
-  nav {
-    gap: 25px;
-	nav a {
+}
+
+nav {
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
   color: #d6e4f5;
-    font-size: 14px;
+  text-decoration: none;
+  font-size: 14px;
 }
 
 nav a:hover {
   color: #ffffff;
-  }
+}
 
 /* ================= HERO ================= */
 .hero {
   position: relative;
   min-height: 65vh;
-   display: flex;
+
+  display: flex;
   align-items: center;
-    justify-content: center;
-	 text-align: center;
+  justify-content: center;
+  text-align: center;
 
   overflow: hidden;
 }
@@ -80,7 +91,7 @@ nav a:hover {
 
   /* subtle zoom animation */
   animation: zoomBg 20s ease-in-out infinite alternate;
-  }
+}
 
 /* light effect */
 .hero::after {
@@ -91,12 +102,12 @@ nav a:hover {
   background: radial-gradient(circle at center, rgba(0,150,255,0.12), transparent 70%);
 
   z-index: 0;
-  }
+}
 
 @keyframes zoomBg {
   from { transform: scale(1); }
   to { transform: scale(1.08); }
-  }
+}
 
 /* Hero text */
 .hero-content {
@@ -104,45 +115,49 @@ nav a:hover {
   z-index: 1;
   max-width: 750px;
   color: white;
-  }
+}
 
 
 .hero-content h2 {
   font-size: 50px;
-    font-weight: 600;
-	  letter-spacing: 0.5px;
-	  }
+  font-weight: 600;
+  letter-spacing: 0.5px;
+    color: white;
+}
 
 .hero-content p {
   font-size: 20px;
   opacity: 0.95;
-  }
+}
 
 .card:hover {
   transform: translateY(-8px);
   box-shadow: 0 20px 40px rgba(0,0,0,0.15);
-  }
-  /* ================= SECTIONS ================= */
+}
+
+
+/* ================= SECTIONS ================= */
 section {
   padding: 90px 0;
   position: relative;
   z-index: 2;
-  }
+}
 
 .about-left img {
   border-radius: 8px;
-  }
+}
 
 .hero-btn {
   display: inline-block;
   margin-top: 25px;
   padding: 12px 28px;
-  
+
   background: #00a2ff;
   color: white;
   text-decoration: none;
-    border-radius: 6px;
-	  font-weight: 500;
+
+  border-radius: 6px;
+  font-weight: 500;
   transition: 0.3s;
 }
 
@@ -153,29 +168,33 @@ section {
 
 /* Titles */
 h2 {
- text-align: center;
+  text-align: center;
   margin-bottom: 50px;
   font-size: 30px;
   color: #1e4f82;
 }
 
+
 /* ================= SERVICES ================= */
+
 #services {
-  background: transparent;
-  }
-  
+  background: linear-gradient(to bottom, #eef3f9, #f8fbff);
+}
+
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 40px;
-  }
+}
+
 .card {
   background: #ffffff;
   padding: 35px;
   border-radius: 14px;
-   text-decoration: none;
+
+  text-decoration: none;
   color: inherit;
-   text-align: center;
+  text-align: center;
 
   box-shadow: 0 10px 25px rgba(0,0,0,0.08);
   transition: all 0.3s ease;
@@ -185,7 +204,7 @@ h2 {
 .card:hover {
   transform: translateY(-10px);
   box-shadow: 0 20px 45px rgba(0,0,0,0.15);
-  }
+}
 
 /* icon styling */
 .card h3 {
@@ -193,7 +212,7 @@ h2 {
   color: #1e4f82;
   font-size: 17px;
   font-weight: 600;
-  }
+}
 
 /* add separation effect */
 .card::after {
@@ -204,39 +223,45 @@ h2 {
   margin: 15px auto 0;
   background: #00a2ff;
   transition: 0.3s;
-  }
+}
 
 .card:hover::after {
   width: 60%;
-  }
+}
 
 .icon {
   display: block;
   font-size: 30px;
   margin-bottom: 10px;
-  }
-  /* ================= GALLERY ================= */
-  
+}
+
+/* ================= GALLERY ================= */
+
+
+/* ================= GALLERY ================= */
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-   gap: 15px;
+  gap: 15px;
   max-width: 900px;
   margin: 40px auto;
-  }
+}
 
 .gallery img {
-width: 100%;
+  width: 100%;
   height: 180px;        /* controls size of small images */
   object-fit: cover;    /* keeps images nicely cropped */
   border-radius: 10px;
-   cursor: pointer;
+  cursor: pointer;
   transition: 0.3s;
-  }
+}
 
 .gallery img:hover {
-transform: scale(1.05);
+  transform: scale(1.05);
 }
+
+
 /* ================= ABOUT ================= */
 .about {
   background: #ffffff;
@@ -283,14 +308,14 @@ transform: scale(1.05);
 
 .contact-box p {
   margin-bottom: 12px;
-  }
+}
 
 /* ================= FOOTER ================= */
 footer {
   padding: 20px;
   text-align: center;
   color: #555;
-  }
+}
 
 /* ================= MOBILE ================= */
 @media (max-width: 768px) {
@@ -325,15 +350,22 @@ footer {
   .cards {
     grid-template-columns: 1fr;
   }
-  }
-  .logo {
-  display: flex;
-   align-items: center;
-   gap: 14px;
-  margin-bottom: 20px;
 }
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 38px;
+}
+
 .logo span {
   color: white;
-    font-weight: 600;
-	  font-size: 16px;
-	  }
+  font-weight: 600;
+  font-size: 16px;
+}
+
+
